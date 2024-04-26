@@ -13,6 +13,8 @@ spec:
     metadata:
       labels:
         app: spring-boot-app
+      annotations:  # Add this section
+        app.argocd.com/managed: true
     spec:
       containers:
       - name: spring-boot-app
